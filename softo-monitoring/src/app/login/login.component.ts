@@ -1,11 +1,11 @@
-import { Routes, Route, Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   username: string;
   password: string;
 
