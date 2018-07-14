@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { SECURE_ROUTES } from './routes/secure/secure.routes';
 import { PUBLIC_ROUTES } from './routes/public/public.route';
 
+import { SecureLayoutComponent } from './core/components/layouts/secure-layout/secure-layout.component';
+
 
 const loginRoutes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: '', children: [...PUBLIC_ROUTES] },
-  { path: '', children: [...SECURE_ROUTES] },
+  { path: '', component: SecureLayoutComponent, children: [...SECURE_ROUTES] },
 ];
 
 @NgModule({

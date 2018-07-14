@@ -1,0 +1,36 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar">
+
+    <!-- <span>Second Line</span>
+
+    <mat-icon class="example-icon">verified_user</mat-icon> -->
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name">Othman App</h1>
+    <span class="spacer"></span>
+    <a>Logout</a>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <div></div>
+        <a mat-list-item routerLink="./dashboard">Accueil</a>
+        <br />
+        <a mat-list-item routerLink="./parents">Parents</a>
+        <br />
+        <a mat-list-item routerLink="./students">Élèves</a>
+        <br />
+        <a mat-list-item routerLink="/teachers">Profs</a>
+        <br />
+        <a mat-list-item routerLink="/schedules">Emploi du temps</a>
+        <br />
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

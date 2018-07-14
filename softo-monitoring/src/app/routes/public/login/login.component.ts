@@ -15,11 +15,12 @@ export class LoginComponent {
 
 
   login(): void {
-    if (this.username === 'admin' && this.password === 'admin') {
-      this.router.navigate(['user']);
-    } else {
-      alert('Invalid credentials');
-    }
+    this.router.navigate(['./parents']);
+    // if (this.username === 'admin' && this.password === 'admin') {
+    //   this.router.navigate(['./parents']);
+    // } else {
+    //   alert('Invalid credentials');
+    // }
   }
 
 }
