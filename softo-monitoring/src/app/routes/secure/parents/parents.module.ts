@@ -1,3 +1,4 @@
+import { MatIconModule, MatInputModule, MatCardModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -16,8 +17,12 @@ import { ParentsCreateComponent } from './create/parents-create.component';
     CommonModule,
     ParentsRoutingModule,
     RouterModule,
+    NavTabsModule,
 
-    NavTabsModule
+    MatIconModule,
+    MatInputModule,
+    MatCardModule,
+    MatDatepickerModule, MatNativeDateModule
   ],
   declarations: [
     ParentsComponent,
