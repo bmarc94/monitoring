@@ -1,9 +1,11 @@
 
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { MatTabsModule, MatTabNav } from '@angular/material';
 import { ParentsRoutingModule } from './parents.routing';
+import { NavTabsModule } from '../../../lib/nav-tabs';
+
 
 import { ParentsComponent } from './parents.component';
 import { ParentsSearchComponent } from './search/parent-search.component';
@@ -13,8 +15,9 @@ import { ParentsCreateComponent } from './create/parents-create.component';
   imports: [
     CommonModule,
     ParentsRoutingModule,
+    RouterModule,
 
-    MatTabsModule
+    NavTabsModule
   ],
   declarations: [
     ParentsComponent,

@@ -1,0 +1,6 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link *ngFor="let navTabLink of navTabLinks; let i = index;" [routerLink]="navTabLink.route" [active]="activeIndex === i"
+    (click)="activeIndex = i">
+    {{navTabLink.label}}
+  </a>
+</nav>
