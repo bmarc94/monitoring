@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { MatIconModule, MatInputModule, MatCardModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { StudentsRoutingModule } from './students.routing';
-import { NavTabsModule } from './../../../lib/nav-tabs/nav-tabs.module';
+import { NavTabsModule } from '../../../lib/nav-tabs/nav-tabs.module';
 
 import { StudentsComponent } from './students.component';
 import { StudentsSearchComponent } from './search/students-search.component';
