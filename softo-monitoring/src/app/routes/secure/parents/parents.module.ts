@@ -1,8 +1,8 @@
-import { MatIconModule, MatInputModule, MatCardModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
-
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+
+import { MatIconModule, MatInputModule, MatCardModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 import { ParentsRoutingModule } from './parents.routing';
 import { NavTabsModule } from '../../../lib/nav-tabs';

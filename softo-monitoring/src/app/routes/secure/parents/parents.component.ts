@@ -1,7 +1,6 @@
 import { NavTabLinks, NavTabLink } from '../../../lib/nav-tabs';
 
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   templateUrl: './parents.component.html',
@@ -13,9 +12,5 @@ export class ParentsComponent implements NavTabLinks {
     { label: 'Nouveau', route: './create' },
     { label: 'Importer', route: './import' },
   ];
-  routeLinks: any[];
-  activeLinkIndex = -1;
-
-  constructor() { }
 
 }
