@@ -6,9 +6,9 @@ import { ParentsSearchComponent } from './search/parent-search.component';
 import { ParentsCreateComponent } from './create/parents-create.component';
 
 const parentsRoutes: Routes = [
+  { path: '', component: ParentsComponent, redirectTo: 'search', pathMatch: 'full' },
   {
-    path: '', component: ParentsComponent,
-    children: [
+    path: '', component: ParentsComponent, children: [
       { path: 'create', component: ParentsCreateComponent },
       { path: 'search', component: ParentsSearchComponent }
     ]
