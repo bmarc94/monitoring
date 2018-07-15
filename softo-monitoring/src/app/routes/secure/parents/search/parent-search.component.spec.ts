@@ -1,23 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SecureLayoutComponent } from './secure-layout.component';
+import { ParentsSearchComponent } from './parent-search.component';
 
-
-
-
-describe('SecureLayoutComponent', () => {
-  let component: SecureLayoutComponent;
-  let fixture: ComponentFixture<SecureLayoutComponent>;
+describe('ParentsSearchComponent', () => {
+  let component: ParentsSearchComponent;
+  let fixture: ComponentFixture<ParentsSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SecureLayoutComponent ]
+      declarations: [ ParentsSearchComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SecureLayoutComponent);
+    fixture = TestBed.createComponent(ParentsSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -7,7 +7,7 @@
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="example-app-name">Othman App</h1>
+    <h1 class="example-app-name">Softo Monitoring</h1>
     <span class="spacer"></span>
     <a>Logout</a>
   </mat-toolbar>
@@ -30,7 +30,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <ng-content></ng-content>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

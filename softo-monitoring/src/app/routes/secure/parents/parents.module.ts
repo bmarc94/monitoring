@@ -1,14 +1,25 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ParentsComponent } from './parents.component';
+import { MatTabsModule, MatTabNav } from '@angular/material';
 import { ParentsRoutingModule } from './parents.routing';
+
+import { ParentsComponent } from './parents.component';
+import { ParentsSearchComponent } from './search/parent-search.component';
+import { ParentsCreateComponent } from './create/parents-create.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    ParentsRoutingModule
+    ParentsRoutingModule,
+
+    MatTabsModule
   ],
-  declarations: [ParentsComponent]
+  declarations: [
+    ParentsComponent,
+    ParentsCreateComponent,
+    ParentsSearchComponent
+  ]
 })
 export class ParentsModule { }
